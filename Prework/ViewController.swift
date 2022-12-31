@@ -24,6 +24,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func colorDidTapped(_ sender: Any) {
+        if (self.view.backgroundColor == UIColor.lightGray){
+            self.view.backgroundColor = UIColor.white
+        } else {
+            self.view.backgroundColor = UIColor.lightGray
+        }
+        
+    }
+    
 
     @IBAction func stepperDidChange(_ sender: UIStepper) {
         numberOfPetsLabel.text = "\(Int(sender.value))"
